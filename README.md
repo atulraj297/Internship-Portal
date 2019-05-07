@@ -1,4 +1,5 @@
 
+
 ## Introduction
 Internship Management Portal, made as a part of Software Engineering course CS4443, for Winter 2019 Semester at IIT Hyderabad.
 
@@ -92,8 +93,7 @@ http://flask.pocoo.org/docs/1.0/
 
 ## Credits
 
-Atul Raj 			CS15BTECH11006
-Apoorv Choudhary	CS15BTECH11004
-Narwade Shubham		CS15BTECH11026
-
+- Atul Raj 			CS15BTECH11006
+- Apoorv Choudhary	CS15BTECH11004
+- Narwade Shubham		CS15BTECH11026
 
