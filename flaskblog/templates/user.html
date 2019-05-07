@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+	<article class="media content-section">
+	  <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + user.image_file) }}">	
+	  <div class="media-body">
+	    <h2 class="article-title">{{ user.username }}</h2>
+	    <p class="article-content">
+	    	{{ user.email }}<br>
+	    	Previous experience:-
+	    	{% for name in names %}
+	    		<a href="{{ url_for('post', post_id=name[0]) }}">{{name[1]}}</a>
+	    	{% endfor %}
+	    </p>
+	    
+	  </div>
+	</article>
+
+{% endblock content %}
+

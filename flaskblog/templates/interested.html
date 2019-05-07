@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for name in names %}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <h2><a class="article-title" href="{{ url_for('user', user_id=name[0]) }}">{{ name[1] }}</a>
+		    </h2>
+		    {% if name[2]>0 %}
+		    	<i>-this user has been recommended already {{ name[2] }} times</i>
+		    {% endif %}
+
+		   	<a href="{{ url_for('interested_select', post_id=post_id, user_id=name[0]) }}"><br>Select</a>
+		  </div>
+		</article>
+	{% endfor %}
+{% endblock content %}
